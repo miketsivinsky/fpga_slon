@@ -10,8 +10,8 @@ PRJ_TCL_FILE=$PRJ_NAME.tcl
 
 if [ -f $PRJ_TCL_FILE ]; then
 	echo "[INFO] $PRJ_NAME started at batch mode"
-	$VIVADO/vivado -mode batch -journal $PRJ_NAME.jou -log $PRJ_NAME.log -source $PRJ_TCL_FILE
+	vivado -mode batch -journal $PRJ_NAME.jou -log $PRJ_NAME.log -source $PRJ_TCL_FILE
 else
 	echo "[WARN] $PRJ_TCL_FILE not exist"
-#	$VIVADO/vivado -mode tcl -journal $PRJ_NAME.jou -log $PRJ_NAME.log
+#	vivado -mode tcl -journal $PRJ_NAME.jou -log $PRJ_NAME.log
 fi	
